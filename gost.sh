@@ -140,7 +140,7 @@ then
 	setClient
 elif [ $chs = "3" ]
 then
-	ps -aux | grep gost
+	ps -aux | grep "gost -"
 elif [ $chs = "4" ]
 then
 	`reset`
