@@ -3,8 +3,8 @@
 # function area
 
 downGost(){
-	`yum -y install wget`
-	`apt-get install wget -y`
+	yum -y install wget
+	apt-get install wget -y
 	`wget https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz`
 	`gunzip gost-linux-amd64-2.11.0.gz`
 	`mv gost-linux-amd64-2.11.0 gost`
@@ -140,7 +140,7 @@ then
 	setClient
 elif [ $chs = "3" ]
 then
-	`ps -aux | grep gost`
+	ps -aux | grep gost
 elif [ $chs = "4" ]
 then
 	`reset`
