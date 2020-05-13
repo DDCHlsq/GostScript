@@ -16,16 +16,6 @@
 
 **本脚本适用于绝大多数主流Linux系统，对应平台为AMD64**。
 
-使用脚本之前需要有`wget`，没有的话先安装
-
-```bash
-yum -y install wget
-```
-
-```shell
-apt-get install wget
-```
-
 然后输入以下命令一键下载、赋权、运行
 
 ```shell
