@@ -86,7 +86,7 @@ setClient(){
 	then
 		echo -e "\033[33m\n确认了！\n\033[0m"
 
-		cmd="nohup gost -L tcp://:"${tcpPort}" -F forward+"${tunnelType}"://"${tunnelAddr}":"${servicePort}" &"
+		cmd="nohup gost -L tcp://:"${tcpPort}" -F forward+"${tunnelType}"://"${tunnelAddr}":"${tunnelPort}" &"
 		echo -e "$cmd\n"
 		eval $cmd
 
