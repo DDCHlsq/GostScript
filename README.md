@@ -29,7 +29,7 @@ apt-get install wget
 然后输入以下命令一键下载、赋权、运行
 
 ```shell
-wget https://github.com/DDCHlsq/GostScript/releases/download/1.0/gost.sh && chmod +x gost.sh && ./gost.sh
+wget https://github.com/DDCHlsq/GostScript/releases/download/2.0/gost.sh && chmod +x gost.sh && ./gost.sh
 ```
 
 运行之后按照引导来即可。
