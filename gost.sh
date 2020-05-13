@@ -33,7 +33,7 @@ setServer(){
 	echo -e "\033[33m\n现在请输入你要转发到的服务的端口\n例如你有一个ss运行在1234端口，那么填1234：\c\033[0m"
 	read servicePort
 
-	echo -e "\033[33m\nこれで全ての条件はクリアされた!!\n所有的条件都集齐了！\n请确认：\n隧道类型：${tunnelType}\n隧道端口：${tunnelPort}\n服务地址：${serviceAddr}\n服务端口：${servicePort}\n\033[0m"
+	echo -e "\033[33m\n所有的条件都集齐了！\n请确认：\n隧道类型：${tunnelType}\n隧道端口：${tunnelPort}\n服务地址：${serviceAddr}\n服务端口：${servicePort}\n\033[0m"
 
 	echo -e "\033[33m是否确认？（否定将退出脚本）[y/n]：\c\033[0m"
 
@@ -52,10 +52,6 @@ setServer(){
 		echo "\033[33m脚本退出\033[0m"
 		exit 1
 	fi
-
-	echo -e "\n\033[33m是否加入开机自启动？\n\033[31m（只保证CentOS7有效，且此行为会使得开机自启动文件完全重置，请小心决定）\n\033[33m[Y/N]：\033[0m\c"
-
-	read YYNN
 
 	echo -e "\033[33m \nヾ(￣▽￣)Bye~Bye~\n \033[0m"
 }
