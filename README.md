@@ -24,6 +24,8 @@ wget https://github.com/DDCHlsq/GostScript/releases/download/2.0/gost.sh && chmo
 
 运行之后按照引导来即可。
 
+**第二次运行不需要执行上面的命令，直接在有脚本的目录运行`./gost.sh`即可**
+
 **客户端运行在中转机器（见图解），服务端运行在最终服务提供机。**
 
 ## 图解说明
