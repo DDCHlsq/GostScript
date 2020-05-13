@@ -5,11 +5,11 @@
 downGost(){
 	yum -y install wget
 	apt-get install wget -y
-	`wget https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz`
-	`gunzip gost-linux-amd64-2.11.0.gz`
-	`mv gost-linux-amd64-2.11.0 gost`
-	`chmod +x gost`
-	`mv gost /usr/bin/`
+	wget https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz
+	gunzip gost-linux-amd64-2.11.0.gz
+	mv gost-linux-amd64-2.11.0 gost
+	chmod +x gost
+	mv gost /usr/bin/
 	echo -e "\033[33mGost安装已完成。直接输入命令"gost"来确定。\033[0m"
 }
 
@@ -20,7 +20,7 @@ setServer(){
 	serviceAddr="127.0.0.1"
 	servicePort="1234"
 
-	`reset`
+	reset
 
 	echo -e "\033[33m你选择了配置Gost服务端\n\n\033[0m"
 
@@ -62,7 +62,7 @@ setClient(){
 	tunnelPort="8000"
 	tcpPort="9999"
 
-	`reset`
+	reset
 
 	echo -e "\033[33m你选择了配置Gost服务端\n\n现在请输入服务端的IP地址：\033[0m\c"
 
@@ -101,7 +101,7 @@ setClient(){
 
 # function area end
 
-`reset`
+reset
 
 echo -e "\033[32m--------------------------------------------------------------\033[0m"
 
@@ -139,7 +139,7 @@ then
 	ps -aux | grep "gost -"
 elif [ $chs = "4" ]
 then
-	`reset`
+	reset
 	ssPort="54321"
 	ssCipher="aes-128-cfb"
 	ssPass="111222"
